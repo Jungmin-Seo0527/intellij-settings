@@ -1,0 +1,57 @@
+<templateSet group="user">
+  <template name="BOJ" value="import java.io.*;&#10;import java.util.*;&#10;&#10;public class Main {&#10;&#10;    static void solve() {&#10;&#10;    }&#10;&#10;    public static void main(String[] args) throws IOException {&#10;        System.out.println(&quot;===== input =====&quot;);&#10;        BufferedReader br = new BufferedReader(new FileReader(&quot;input/input1.txt&quot;));&#10;        BufferedReader br2 = new BufferedReader(new FileReader(&quot;input/input1.txt&quot;));&#10;        String s;&#10;        while ((s = br2.readLine()) != null) {&#10;            System.out.println(s);&#10;        }&#10;        System.out.println(&quot;===== output =====&quot;);&#10;        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));&#10;        StringTokenizer st = new StringTokenizer(br.readLine());&#10;&#10;        solve();&#10;    }&#10;}&#10;" description="BOJ" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="CF" value="import java.io.*;&#10;import java.util.*;&#10;&#10;public class Main {&#10;&#10;    static long solve() {&#10;&#10;        return 0;&#10;    }&#10;&#10;    public static void main(String[] args) throws IOException {&#10;        System.out.println(&quot;===== input =====&quot;);&#10;        BufferedReader br = new BufferedReader(new FileReader(&quot;input/input1.txt&quot;));&#10;        BufferedReader br2 = new BufferedReader(new FileReader(&quot;input/input1.txt&quot;));&#10;        String s;&#10;        while ((s = br2.readLine()) != null) {&#10;            System.out.println(s);&#10;        }&#10;        System.out.println(&quot;===== output =====&quot;);&#10;        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));&#10;        StringTokenizer st = new StringTokenizer(br.readLine());&#10;        StringBuilder out = new StringBuilder();&#10;        int T = Integer.parseInt(st.nextToken());&#10;        while (T-- &gt; 0) {&#10;&#10;&#10;            out.append(solve()).append(&quot;\n&quot;);&#10;        }&#10;        System.out.println(out);&#10;    }&#10;}" description="CF" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="FR" value="static class FastReader {&#10;    final private int BUFFER_SIZE = 1 &lt;&lt; 16;&#10;    private DataInputStream din;&#10;    private byte[] buffer;&#10;    private int bufferPointer, bytesRead;&#10;&#10;    public FastReader() {&#10;        din = new DataInputStream(System.in);&#10;        buffer = new byte[BUFFER_SIZE];&#10;        bufferPointer = bytesRead = 0;&#10;    }&#10;&#10;    public FastReader(String file_name) throws IOException {&#10;        din = new DataInputStream(new FileInputStream(file_name));&#10;        buffer = new byte[BUFFER_SIZE];&#10;        bufferPointer = bytesRead = 0;&#10;    }&#10;&#10;    public String readLine() throws IOException {&#10;        byte[] buf = new byte[64]; // line length&#10;        int cnt = 0, c;&#10;        while ((c = read()) != -1) {&#10;            if (c == '\n')&#10;                break;&#10;            buf[cnt++] = (byte) c;&#10;        }&#10;        return new String(buf, 0, cnt);&#10;    }&#10;&#10;    public int nextInt() throws IOException {&#10;        int ret = 0;&#10;        byte c = read();&#10;        while (c &lt;= ' ')&#10;            c = read();&#10;        boolean neg = (c == '-');&#10;        if (neg)&#10;            c = read();&#10;        do {&#10;            ret = ret * 10 + c - '0';&#10;        } while ((c = read()) &gt;= '0' &amp;&amp; c &lt;= '9');&#10;&#10;        if (neg)&#10;            return -ret;&#10;        return ret;&#10;    }&#10;&#10;    public long nextLong() throws IOException {&#10;        long ret = 0;&#10;        byte c = read();&#10;        while (c &lt;= ' ')&#10;            c = read();&#10;        boolean neg = (c == '-');&#10;        if (neg)&#10;            c = read();&#10;        do {&#10;            ret = ret * 10 + c - '0';&#10;        }&#10;        while ((c = read()) &gt;= '0' &amp;&amp; c &lt;= '9');&#10;        if (neg)&#10;            return -ret;&#10;        return ret;&#10;    }&#10;&#10;    public double nextDouble() throws IOException {&#10;        double ret = 0, div = 1;&#10;        byte c = read();&#10;        while (c &lt;= ' ')&#10;            c = read();&#10;        boolean neg = (c == '-');&#10;        if (neg)&#10;            c = read();&#10;&#10;        do {&#10;            ret = ret * 10 + c - '0';&#10;        }&#10;        while ((c = read()) &gt;= '0' &amp;&amp; c &lt;= '9');&#10;&#10;        if (c == '.') {&#10;            while ((c = read()) &gt;= '0' &amp;&amp; c &lt;= '9') {&#10;                ret += (c - '0') / (div *= 10);&#10;            }&#10;        }&#10;&#10;        if (neg)&#10;            return -ret;&#10;        return ret;&#10;    }&#10;&#10;    private void fillBuffer() throws IOException {&#10;        bytesRead = din.read(buffer, bufferPointer = 0, BUFFER_SIZE);&#10;        if (bytesRead == -1)&#10;            buffer[0] = -1;&#10;    }&#10;&#10;    private byte read() throws IOException {&#10;        if (bufferPointer == bytesRead)&#10;            fillBuffer();&#10;        return buffer[bufferPointer++];&#10;    }&#10;&#10;    public void close() throws IOException {&#10;        if (din == null)&#10;            return;&#10;        din.close();&#10;    }&#10;}" description="FastReader" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="SOL" value="# [제목](https://www.acmicpc.net/problem/문제번호)&#10;&#10;### 난이도&#10;&#10;***&#10;??&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### 문제&#10;&#10;***&#10;??&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### 입력&#10;&#10;***&#10;??&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### 출력&#10;&#10;***&#10;??&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;#### 예제 입력 1&#10;&#10;&gt; ??&#10;&#10;#### 예제 출력 1&#10;&#10;&gt; ??&#10;***&#10;&#10;#### 예제 입력 2&#10;&#10;&gt; ?&#10;&#10;#### 예제 출력 2&#10;&#10;&gt; ?&#10;&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### 알고리즘 분류&#10;&#10;***&#10;&#10;* ??&#10;&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### Solution&#10;&#10;***&#10;&#10;??&#10;&lt;br&gt;&lt;br&gt;&#10;&#10;### [전체 코드](https://github.com/Jungmin-Seo0527/CodingTest/blob/main/src/??)&#10;" description="Solution template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ANY_OPENAPI_JSON_FILE" value="false" />
+      <option name="ANY_OPENAPI_YAML_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="GENERAL_JSON_FILE" value="false" />
+      <option name="GENERAL_YAML_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="HTTP_CLIENT_ENVIRONMENT" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PL/SQL" value="false" />
+      <option name="PROTO" value="false" />
+      <option name="PROTOTEXT" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+    </context>
+  </template>
+  <template name="tdd" value="@Test&#10;@DisplayName(&quot;$DISPLAY$&quot;)&#10;public void $NAME$() {&#10;    // given&#10;    $END$&#10;            &#10;    // when&#10;    &#10;    &#10;    // then&#10;}" description="test code template" toReformat="false" toShortenFQNames="true">
+    <variable name="DISPLAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
