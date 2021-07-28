@@ -5,4 +5,10 @@
   <action id="ActivateRunToolWindow">
     <keyboard-shortcut first-keystroke="alt 2" />
   </action>
+  <action id="NewClass">
+    <keyboard-shortcut first-keystroke="alt c" />
+  </action>
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="alt f" />
+  </action>
 </keymap>
