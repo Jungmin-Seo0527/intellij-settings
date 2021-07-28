@@ -1,6 +1,16 @@
 <code_scheme name="Default" version="173">
   <JavaCodeStyleSettings>
+    <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION" value="true" />
+    <option name="ANNOTATION_PARAMETER_WRAP" value="5" />
     <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="100" />
     <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="100" />
   </JavaCodeStyleSettings>
+  <codeStyleSettings language="JAVA">
+    <option name="METHOD_ANNOTATION_WRAP" value="5" />
+    <option name="CLASS_ANNOTATION_WRAP" value="5" />
+    <option name="FIELD_ANNOTATION_WRAP" value="5" />
+    <option name="PARAMETER_ANNOTATION_WRAP" value="5" />
+    <option name="VARIABLE_ANNOTATION_WRAP" value="5" />
+    <option name="ENUM_CONSTANTS_WRAP" value="5" />
+  </codeStyleSettings>
 </code_scheme>
