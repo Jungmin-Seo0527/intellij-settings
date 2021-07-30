@@ -24,6 +24,9 @@
   <action id="NewClass">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
   <action id="NewFile">
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
