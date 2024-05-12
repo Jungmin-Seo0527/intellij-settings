@@ -29,7 +29,9 @@
                       </option>
                     </GrepExpressionItem>
                     <GrepExpressionItem>
+                      <option name="continueMatching" value="true" />
                       <option name="grepExpression" value=".*ERROR.*" />
+                      <option name="operationOnMatch" value="CONTINUE_MATCHING" />
                       <option name="style">
                         <GrepStyle>
                           <option name="backgroundColor">
@@ -65,8 +67,8 @@
                       </option>
                     </GrepExpressionItem>
                     <GrepExpressionItem>
-                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*INFO.*" />
+                      <option name="highlightOnlyMatchingText" value="true" />
                       <option name="style">
                         <GrepStyle>
                           <option name="backgroundColor">
@@ -77,7 +79,6 @@
                           <option name="foregroundColor">
                             <GrepColor>
                               <option name="color" value="-16711936" />
-                              <option name="enabled" value="true" />
                             </GrepColor>
                           </option>
                         </GrepStyle>
@@ -115,7 +116,7 @@
               </GrepExpressionGroup>
             </list>
           </option>
-          <option name="id" value="1627455732167" />
+          <option name="id" value="1623327335256" />
           <option name="inputFilterGroups">
             <list>
               <GrepExpressionGroup>

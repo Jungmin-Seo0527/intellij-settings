@@ -1,0 +1,10 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Java/Control Flow/Replace for-each loop with optimized indexed for loop" />
+    <ignoreAction name="Java/Control Flow/Replace for-each loop with iterator for loop" />
+    <ignoreAction name="Java/Control Flow/Replace for-each loop with indexed for loop" />
+    <ignoreAction name="Other/Rollback changes in current line" />
+    <ignoreAction name="Java/Control Flow/Extract to method reference" />
+    <ignoreAction name="Java/Control flow/Invert 'if' condition" />
+  </component>
+</application>

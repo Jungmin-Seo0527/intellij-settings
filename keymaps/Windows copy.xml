@@ -1,26 +1,37 @@
 <keymap version="1" name="Windows copy" parent="$default">
-  <action id="ActivateDatabaseToolWindow">
-    <keyboard-shortcut first-keystroke="alt minus" />
-  </action>
   <action id="ActivateFavoritesToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
   </action>
   <action id="ActivateRunToolWindow">
     <keyboard-shortcut first-keystroke="alt 2" />
+    <keyboard-shortcut first-keystroke="shift ctrl q" />
+  </action>
+  <action id="ActivateTODOToolWindow">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
+  <action id="ChooseRunConfiguration">
+    <keyboard-shortcut first-keystroke="shift alt f10" />
+    <keyboard-shortcut first-keystroke="shift ctrl x" />
   </action>
   <action id="CopyPathFromRepositoryRootProvider">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="Editor Cut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+  </action>
   <action id="EditorCompleteStatement">
+    <keyboard-shortcut first-keystroke="shift ctrl enter" />
     <keyboard-shortcut first-keystroke="shift enter" />
   </action>
-  <action id="EditorStartNewLine">
-    <keyboard-shortcut first-keystroke="shift ctrl enter" />
+  <action id="EditorCut">
+    <keyboard-shortcut first-keystroke="shift delete" />
   </action>
+  <action id="EditorStartNewLine" />
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt insert" />
     <keyboard-shortcut first-keystroke="alt numpad0" />
   </action>
+  <action id="Github.PullRequest.Diff.Comment.Create" />
   <action id="NewClass">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
@@ -29,5 +40,11 @@
   </action>
   <action id="NewFile">
     <keyboard-shortcut first-keystroke="alt f" />
+  </action>
+  <action id="Stop">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
+  <action id="UsageView.Remove">
+    <keyboard-shortcut first-keystroke="shift delete" />
   </action>
 </keymap>
